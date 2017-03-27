@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.team55.buzzfilm.SearchMovies">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search for Movies"
+        android:id="@+id/movieBox"
+        android:enabled="true"
+        android:layout_below="@+id/searchQuery"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search for Series"
+        android:id="@+id/seriesBox"
+        android:checked="false"
+        android:enabled="true"
+        android:layout_below="@+id/movieBox"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchQuery"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:hint="Enter title to search for" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/startSearch"
+        android:layout_below="@+id/seriesBox"
+        android:layout_alignParentStart="true"
+        android:enabled="true" />
+</RelativeLayout>
